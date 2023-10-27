@@ -1,0 +1,22 @@
+:root{
+    --primaryBtnBgColor: #00b7ff;
+    --secondaryBtnBgColor: #6c757d;
+    --BtnTxtColor: #fff;
+}
+
+#primaryBtn{
+    background: var(--primaryBtnBgColor);
+    color: var(--BtnTxtColor);
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+#secondaryBtn{
+    background: var(--secondaryBtnBgColor);
+    color: var(--BtnTxtColor);
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+}

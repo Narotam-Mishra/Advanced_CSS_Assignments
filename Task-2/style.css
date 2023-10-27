@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(-40deg) rotateY(45deg);
+}
+
+.side {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 123, 255, 0.8);
+  border: solid 3px #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Applying styles to each face */
+/* tranform each of cube */
+.front {
+  transform: translateZ(53px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(53px); 
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(53px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(53px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(53px);
+}
+
+.back {
+  transform: rotateY(-180deg) translateZ(53px);
+}
+
+
+

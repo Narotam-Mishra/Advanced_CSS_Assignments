@@ -1,0 +1,5 @@
+# In given Task-4, we need to set display of Logo element as none.
+
+.logo{
+    display: none;
+}

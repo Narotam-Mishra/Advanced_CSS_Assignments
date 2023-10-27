@@ -1,0 +1,43 @@
+Question - Explain the purpose of using the var() function in css?
+
+# In CSS, the var() function is used to define and apply custom properties, also known as CSS variables. These variables allow us to store and reuse values throughout your CSS code. This can make your code more maintainable, as we can change a value in one place (the variable declaration) and have it automatically update everywhere it's used.
+
+# Usage of var() :-
+
+1). Variable Declaration :- We declare a variable using the -- prefix followed by a name and assign it a value within a CSS rule. 
+
+For example: 
+:root {
+  --main-color: #ff6600;
+}
+
+where, --main-color is the variable name, and #ff6600 is the value.
+
+2). Using the Variable :- We can then use this variable value anywhere in your CSS code by calling var() and passing the variable name:
+
+.my-element {
+  background-color: var(--main-color);
+}
+
+# This sets the background color of .my-element to the value of --main-color, which is #ff6600.
+
+3). Fallback Values :- We can provide a fallback value in case the variable is undefined.
+For Example :-
+.my-element {
+  background-color: var(--main-color, #ff6600);
+}
+
+# If --main-color is not defined, it will use #ff6600 as the fallback.
+
+4). Cascading and Inheritance :- CSS variables follow the normal rules of cascading and inheritance, which means they can be overridden by more specific selectors or inherited by child elements.
+
+5). Dynamic Changes :- One of the powerful features of CSS variables is that they can be dynamically changed using JavaScript. This allows you to create themes or respond to user interactions without having to directly manipulate styles in JavaScript.
+
+# so, var() provides a flexible and reusable way to manage values in your CSS code, making it easier to maintain and update your styles.
+
+
+
+
+
+
+
